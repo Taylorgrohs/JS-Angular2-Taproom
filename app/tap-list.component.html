@@ -1,0 +1,5 @@
+<tap-display *ngFor="#currentTap of tapList"
+  (click) = "tapClicked(currentTap)"
+  [class.selected]="currentTap === selectedTap"
+  [tap]="currentTap">
+</tap-display>
