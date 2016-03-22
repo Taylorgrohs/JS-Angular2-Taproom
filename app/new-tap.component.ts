@@ -16,12 +16,12 @@ import { Tap } from './tap.model';
   `
 })
 export class NewTapComponent {
-  public onSubmitNewTap: EventEmitter<String>;
+  public onSubmitNewTap: EventEmitter<any>;
   constructor() {
     this.onSubmitNewTap = new EventEmitter();
   }
   addTap(userName: HTMLInputElement, userBrand: HTMLInputElement, userPrice: HTMLInputElement, userAlcohol: HTMLInputElement){
-    var holder = userName.value + " " + userBrand.value + " " + userPrice.value + " " + userAlcohol.value;
+    var holder = [userName.value, userBrand.value, userPrice.value, userAlcohol.value];
     this.onSubmitNewTap.emit(holder);
     userName.value = "";
     userBrand.value = "";

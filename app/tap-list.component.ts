@@ -21,11 +21,9 @@ export class TapListComponent {
     this.selectedTap = clickedTap;
     this.onTapSelect.emit(clickedTap);
   }
-  createTap(holder: string): void {
-    var hold = holder.split(" ");
-
-    this.tapList.push(new Tap(
-      hold[0], hold[1], hold[2], hold[3], 124, this.tapList.length)
+  createTap(holder: any): void {
+console.log(holder);
+    this.tapList.push(new Tap(holder[0], holder[1], holder[2], holder[3], 124, this.tapList.length)
     );
   }
 }
