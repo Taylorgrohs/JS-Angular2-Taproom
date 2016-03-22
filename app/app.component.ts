@@ -24,8 +24,8 @@ export class AppComponent {
   public taps: Tap[];
   constructor(){
     this.taps = [
-      new Tap("IPA", "Deschutes", "$5", 10, 124, 0),
-      new Tap("Stout", "Elysian", "$4", 8.7, 124, 1)
+      new Tap("IPA", "Deschutes", "$5", "10", 124, 0),
+      new Tap("Stout", "Elysian", "$4", "8.7", 124, 1)
     ];
   }
   tapWasSelected(clickedTap: Tap): void {
