@@ -1,4 +1,9 @@
-<tap-display *ngFor="#currentTap of tapList"
+<select (change)="onChange($event.target.value)" class="filter">
+  <option value="all" selected="selected">Show All Taps</option>
+  <option value="low">Show Low Taps</option>
+  <option value="notLow">Show Full Taps</option>
+</select>
+<tap-display *ngFor="#currentTap of tapList | low:filterLow:selectedTap"
   (click) = "tapClicked(currentTap)"
   [class.selected]="currentTap === selectedTap"
   [tap]="currentTap">

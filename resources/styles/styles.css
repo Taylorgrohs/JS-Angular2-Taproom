@@ -1,12 +1,12 @@
 h1 {
-  color: blue;
+  color: white;
 }
 .selected {
   color: #22bdf0;
 }
-.task-form {
-  margin-top: 80px;
-  margin-bottom: 80px;
+.tap-form {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .add-button {
   margin-bottom: 10px;
@@ -22,9 +22,18 @@ h1 {
 ul {
   font-size: 20px;
 }
+ul:hover {
+  cursor: crosshair;
+}
 .jumbotron {
   text-align: center;
+    background-image:url(http://jackieos.com/wordpress/wp-content/uploads/2014/03/wood_background.jpg);
+    color: white;
+    text-shadow: 10px 10px 20px white;
 }
 .first {
   padding-left: 200px;
+}
+body {
+background-color: ;
 }
