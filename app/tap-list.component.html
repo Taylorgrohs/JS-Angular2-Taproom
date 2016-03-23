@@ -4,6 +4,7 @@
   <option value="low">Show Low Taps</option>
   <option value="notLow">Show Full Taps</option>
 </select>
+<h3 class="test test2">Beers on Tap</h3>
 <tap-display *ngFor="#currentTap of tapList | low:filterLow:selectedTap"
   (click) = "tapClicked(currentTap)"
   [class.selected]="currentTap === selectedTap"

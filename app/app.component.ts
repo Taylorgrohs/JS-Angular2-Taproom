@@ -12,7 +12,6 @@ import { TapListComponent } from './tap-list.component';
     </div>
   </div>
     <div class="container">
-    <h3 class="test">List of beers on tap:</h3>
       <tap-list
       [tapList]="taps" (onTapSelect)="tapWasSelected($event)">
       </tap-list>
@@ -25,7 +24,9 @@ export class AppComponent {
   constructor(){
     this.taps = [
       new Tap("IPA", "Deschutes", "$5", "10", 9, 0),
-      new Tap("Stout", "Elysian", "$4", "8.7", 124, 1)
+      new Tap("Stout", "Elysian", "$4", "8.7", 124, 1),
+      new Tap("Tricerahops", "Ninkasi", "$6", "10", 49, 2),
+      new Tap("Apple Ale", "REDDS", "$4", "4.5", 15, 3)
     ];
   }
   tapWasSelected(clickedTap: Tap): void {

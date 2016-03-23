@@ -5,9 +5,9 @@ import { Tap } from './tap.model';
     selector: 'tap-display',
     inputs: ['tap'],
   template: `
-    <ul class="first"> <li>{{ tap.name }} - {{ tap.brand }} || {{ tap.pints }} pints left.</li>
-    <ul> <li>{{ tap.price }} per pint / {{ tap.alcohol }}% Alcohol</li></ul>
-    </ul>
+      <ul class="first {{ tap.color }}"> <li>{{ tap.name }} - {{ tap.brand }} || {{ tap.pints }} pints left.</li>
+      <ul class="{{ tap.color }}"> <li>{{ tap.price }} per pint / {{ tap.alcohol }}% Alcohol</li></ul>
+      </ul>
   `
 })
 export class TapComponent {
