@@ -7,7 +7,7 @@ import { Tap } from './tap.model';
 })
 export class LowPipe implements PipeTransform {
   transform(input: Tap[], args) {
-    console.log('selected tap: ', args[0]);
+    console.log('selected tap: ', args[1]);
     var desiredPintState = args[0];
     if(desiredPintState === "low") {
       return input.filter((tap) => {

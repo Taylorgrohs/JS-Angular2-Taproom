@@ -12,7 +12,7 @@ import { TapListComponent } from './tap-list.component';
     </div>
   </div>
     <div class="container">
-    <h3>List of beers on tap:</h3>
+    <h3 class="test">List of beers on tap:</h3>
       <tap-list
       [tapList]="taps" (onTapSelect)="tapWasSelected($event)">
       </tap-list>

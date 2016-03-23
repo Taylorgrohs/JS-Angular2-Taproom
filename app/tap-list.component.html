@@ -1,3 +1,4 @@
+<div class="container test">
 <select (change)="onChange($event.target.value)" class="filter">
   <option value="all" selected="selected">Show All Taps</option>
   <option value="low">Show Low Taps</option>
@@ -11,3 +12,4 @@
 <edit-tap-pints *ngIf="selectedTap"[tap]="selectedTap">
 </edit-tap-pints>
 <new-tap (onSubmitNewTap)="createTap($event)"></new-tap>
+</div>

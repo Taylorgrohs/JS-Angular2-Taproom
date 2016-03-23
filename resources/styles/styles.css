@@ -1,4 +1,4 @@
-h1 {
+h1, h3 {
   color: white;
 }
 .selected {
@@ -21,19 +21,27 @@ h1 {
 
 ul {
   font-size: 20px;
+  color: white;
 }
 ul:hover {
   cursor: crosshair;
 }
 .jumbotron {
   text-align: center;
-    background-image:url(http://jackieos.com/wordpress/wp-content/uploads/2014/03/wood_background.jpg);
+background-color: rgba(0, 0, 0, 0.5);;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
-    text-shadow: 10px 10px 20px white;
 }
 .first {
   padding-left: 200px;
 }
 body {
-background-color: ;
+background-image: url(https://images8.alphacoders.com/413/413078.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.test {
+  padding-left: 200px;
 }
