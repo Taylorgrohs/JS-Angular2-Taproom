@@ -3,4 +3,6 @@
   [class.selected]="currentTap === selectedTap"
   [tap]="currentTap">
 </tap-display>
+<edit-tap-pints *ngIf="selectedTap"[tap]="selectedTap">
+</edit-tap-pints>
 <new-tap (onSubmitNewTap)="createTap($event)"></new-tap>
