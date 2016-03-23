@@ -6,9 +6,11 @@ import { TapListComponent } from './tap-list.component';
   selector: 'my-app',
   directives: [TapListComponent],
   template: `
-  <div class="jumbotron">
-    <div class="container">
-      <h1>Tap Room List</h1>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Tap Room List</h1>
+      </div>
     </div>
   </div>
     <div class="container">
@@ -25,8 +27,8 @@ export class AppComponent {
     this.taps = [
       new Tap("IPA", "Deschutes", "$5", "10", 9, 0),
       new Tap("Stout", "Elysian", "$4", "8.7", 124, 1),
-      new Tap("Tricerahops", "Ninkasi", "$6", "10", 49, 2),
-      new Tap("Apple Ale", "REDDS", "$4", "4.5", 15, 3)
+      new Tap("Tricerahops", "Ninkasi", "$6", "10", 80, 2),
+      new Tap("Apple Ale", "REDDS", "$4", "4.5", 45, 3)
     ];
   }
   tapWasSelected(clickedTap: Tap): void {

@@ -5,13 +5,13 @@ import { Tap } from './tap.model';
   selector: 'new-tap',
   outputs: ['onSubmitNewTap'],
   template: `
-    <div class="tap-form">
+    <div class="tap-form tap-create">
       <h3>Tap a new keg</h3>
       <input placeholder="Name" class="input-md" #newName>
       <input placeholder="Brand" class="input-md" #newBrand>
       <input placeholder="Price" class="input-md" #newPrice>
       <input placeholder="Alcohol" class="input-md" #newAlcohol>
-      <button (click)="addTap(newName, newBrand, newPrice, newAlcohol)" class="btn-success btn-lg add-button">Add</button>
+      <button (click)="addTap(newName, newBrand, newPrice, newAlcohol)" class="btn-default btn-lg add-button">Add</button>
     </div>
   `
 })
